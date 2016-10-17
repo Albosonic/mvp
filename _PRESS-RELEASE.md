@@ -17,28 +17,28 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  > Random Date
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  > This App is for people who want to go on a random date with a random person of a random age and gender.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > Do you ever want to go on a random date with some random person of any gender. This app is for you. Just enter your name and answer three questions. Random Date will then pair you with some one in your area who has either the same intrests or opposite interests. Your choice 
 
 ## Problem ##
-  > Describe the problem your product solves.
+  > This app solves the problem of dating indecisiveness.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  > This is a brute force solution to dating indecission.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  > "Dating, much like fine cuisine is about exposure. I thought eating squid ink sounded gross until I tried it. That's what I want to do for the dating world. Give people a chance to try stuff they might write off as gross." 
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  > To get started just enter your name, answer three questions and click date me!.
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  > "I used to date only one type of guy in college, all american quarter back kinda guy but things never worked out. I tried random date, and now I am married to a 57 year old Opera signer/Iguana trainer from Sai-Pan. I love her so much, thanks random date! "
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  > Don't wait any longer. Sign up and try now for free.
