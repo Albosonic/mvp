@@ -13,17 +13,30 @@
   <script src="/bower_components/angular-material/angular-material.js"></script>
   <script src="/bower_components/angular-messages/angular-messages.js"></script>
   <script src="/scripts/content.js"></script>
+  <script src="/scripts/generator.js"></script>
   <script src="/scripts/signup.js"></script>
   <script src="/scripts/login.js"></script>
   <script src="/app.js"></script>
 </head>
+<md-nav-bar aria-label="nav" md-selected-nav-item="currentNavItem">
+  <md-nav-item md-nav-href="#/login" name="page1">Login</md-nav-item>
+  <md-nav-item md-nav-href="#/generator" name="page2">Random Date</md-nav-item>
+  <md-nav-item md-nav-href="#/content" name="page3">Generate</md-nav-item>
+</md-nav-bar>
 <body>
-<div layout="column" layout-align="center center">
-  <h1>Hello World</h1>
-  <h2><a href="#/content">Random Date</a></h2>
-</div>
+  <div layout="column" layout-align="center center">
+    <h1>Dating Adventures</h1>
+  </div>
   <div ng-view layout="column"></div>
+  <script>
+    (function() {
+       $rootScope.$on('$routeChangeSuccess', function(event, current) {
+         $scope.currentLink = getCurrentLinkFromRoute(current);
+       });
+    });
+  </script>
+
 </body>
 </html>
-
+<!-- set up .bowerrc -->
 <!-- got the router working client side -->

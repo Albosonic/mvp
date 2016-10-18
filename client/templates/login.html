@@ -1,0 +1,10 @@
+<form ng-hide="hidden" name="userForm" ng-submit="addUser()" layout="column" layout-align="center center">
+<!-- change addUser() to login -->
+  <h1>Login here</h1>
+  <input placeholder="username" type="text" ng-model="user.answer1"><br>
+  <input placeholder="password" type="text" ng-model="user.answer2"><br>
+  <input placeholder="email" type="text" ng-model="user.answer3"><br>
+  <md-button ng-click="login()" class="md-icon-button" aria-label="Add">
+    <md-icon class="material-icons">add</md-icon>
+  </md-button>
+</form>

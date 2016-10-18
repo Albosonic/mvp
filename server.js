@@ -3,7 +3,7 @@ var url = require('url');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var User = require('./users/userModel.js');
-var Promise = require('bluebird')
+var Promise = require('bluebird');
 Promise.promisifyAll(User);
 
 var app = express();
