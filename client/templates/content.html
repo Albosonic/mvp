@@ -1,5 +1,5 @@
 <div ng-controller="ContentCtrl">
-  <form name="userForm" ng-submit="addUser()">
+  <form name="userForm" ng-submit="addUser()" layout="column" layout-align="center center">
     <span>Enter Name</span><br>
     <input type="text" ng-model="user.name"><br>
     <h1>Answer These Questions</h1>
@@ -10,10 +10,17 @@
     <input type="text" ng-model="user.answer2"><br>
     <span>favorite holiday</span><br>
     <input type="text" ng-model="user.answer3"><br>
-    <button>button</button>
+    <md-button class="md-icon-button" aria-label="Add">
+      <md-icon class="material-icons">add</md-icon>
+    </md-button>
+
   </form>
   <!-- get all users from database and compare against user in current scope -->
-  <button ng-click="getDate()">Get Date</button>
-  <h2>{{ match }}</h2>
-
+  <div layout="column" layout-align="center center">
+    <md-button ng-click="getDate()" class="md-icon-button" aria-label="Add" >
+      <md-icon class="material-icons">Get Date</md-icon>
+    </md-button>
+    <h2>{{ match }}</h2>
+    
+  </div>
 </div>

@@ -3,19 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Babay</title>
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+  <link rel="stylesheet" href="styles/styles.css">
   <link href="/templates/signup.html">
-  <script src="/components/angular/angular.js"></script>
-  <script src="/components/angular-route/angular-route.js"></script>
+  <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/angular-route/angular-route.js"></script>
+  <script src="/bower_components/angular-animate/angular-animate.js"></script>
+  <script src="/bower_components/angular-aria/angular-aria.js"></script>
+  <script src="/bower_components/angular-material/angular-material.js"></script>
+  <script src="/bower_components/angular-messages/angular-messages.js"></script>
   <script src="/scripts/content.js"></script>
   <script src="/scripts/signup.js"></script>
   <script src="/scripts/login.js"></script>
   <script src="/app.js"></script>
 </head>
 <body>
+<div layout="column" layout-align="center center">
   <h1>Hello World</h1>
-  <a href="#/content">go to content <strong>Go!!!</strong> ...</a>
-  <div ng-view></div>
+  <h2><a href="#/content">Random Date</a></h2>
+</div>
+  <div ng-view layout="column"></div>
 </body>
 </html>
 

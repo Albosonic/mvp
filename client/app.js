@@ -1,4 +1,4 @@
-angular.module('app', ['ngRoute', 'content'])
+angular.module('app', ['ngRoute', 'ngMaterial', 'content'])
   .config(function($routeProvider) {
     $routeProvider
       .when('/content', {
