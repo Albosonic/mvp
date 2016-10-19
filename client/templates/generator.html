@@ -1,3 +1,11 @@
-<div>
-  <h1 layout="column" layout-align="center center">Date Generator</h1>
+<div layout="column" layout-align="center center">
+  <h1>Date Generator</h1>
+  <h2>{{ brewery }}</h2>
+  <h4>{{ established }}</h4>
+  <p>{{ description }}</p>
+  <img src="assets/dateImage.jpeg" style="width: 40%; height: auto"/>
+  <md-button ng-click="getMenus()" class="md-icon-button" aria-label="Add">
+    <md-icon class="material-icons">add</md-icon>
+  </md-button>
+  <footer> click add to generate a date</footer>
 </div>

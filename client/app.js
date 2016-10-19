@@ -1,6 +1,7 @@
 angular.module('app', ['ngRoute', 'ngMaterial', 'content', 'generator', 'login'])
   .config(function($routeProvider) {
     $routeProvider
+      
       .when('/content', {
         templateUrl: '/templates/content.html',
         controller: 'ContentCtrl'
@@ -14,3 +15,7 @@ angular.module('app', ['ngRoute', 'ngMaterial', 'content', 'generator', 'login']
         controller: 'LoginCtrl'
       })
   })
+
+  
+
+  

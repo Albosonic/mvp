@@ -14,7 +14,8 @@
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "handlebars": "^4.0.5",
-    "mongoose": "^4.6.4"
+    "mongoose": "^4.6.4",
+    "request": "^2.75.0"
   },
   "devDependencies": {
     "karma-mocha": "^1.2.0",

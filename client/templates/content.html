@@ -1,25 +1,38 @@
 <div ng-controller="ContentCtrl">
-  <form ng-hide="hidden" name="userForm" ng-submit="addUser()" layout="column" layout-align="center center">
-    <span>Enter Name</span><br>
-    <input type="text" ng-model="user.name"><br>
-    <h1>Answer These Questions</h1>
+  <form ng-hide="hidden" name="userForm" layout="column" >
+    <md-input-container>
+      <label>Enter Name</label>
+      <input type="text" ng-model="user.name">
+    </md-input-container>
 
-    <span>favorite artist</span><br>
-    <input type="text" ng-model="user.answer1"><br>
-    <span>favorite machine</span><br>
-    <input type="text" ng-model="user.answer2"><br>
-    <span>favorite holiday</span><br>
-    <input type="text" ng-model="user.answer3"><br>
-    <md-button class="md-icon-button" aria-label="Add">
-      <md-icon class="material-icons">add</md-icon>
+    <h3>Answer These Questions</h3>
+
+    <md-input-container>
+      <label>Favorite Artist</label>
+      <input type="text" ng-model="user.answer1">
+    </md-input-container>
+
+    <md-input-container>
+      <label> Favorite Machine</label>
+      <input type="text" ng-model="user.answer2">
+    </md-input-container>
+
+    <md-input-container>
+      <label> Favorite Holiday</label>
+      <input type="text" ng-model="user.answer3">
+    </md-input-container>
+
+    <md-button ng-click="addUser()" class="md-icon-button" aria-label="Add">
+      <md-icon type="submit" class="material-icons">add</md-icon>
     </md-button>
+
   </form>
   <!-- get all users from database and compare against user in current scope -->
   <div layout="column" layout-align="center center">
     <md-button ng-click="getDate()" class="md-icon-button" aria-label="Add" >
       <md-icon class="material-icons">Date</md-icon>
-
     </md-button>
     <h2>{{ match }}</h2>
   </div>
 </div>
+

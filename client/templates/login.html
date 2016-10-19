@@ -1,10 +1,23 @@
-<form ng-hide="hidden" name="userForm" ng-submit="addUser()" layout="column" layout-align="center center">
-<!-- change addUser() to login -->
-  <h1>Login here</h1>
-  <input placeholder="username" type="text" ng-model="user.answer1"><br>
-  <input placeholder="password" type="text" ng-model="user.answer2"><br>
-  <input placeholder="email" type="text" ng-model="user.answer3"><br>
-  <md-button ng-click="login()" class="md-icon-button" aria-label="Add">
-    <md-icon class="material-icons">add</md-icon>
-  </md-button>
-</form>
+   <md-content layout-padding>
+      <div>
+        <form name="userForm">
+          <div layout-gt-sm="row">
+            <md-input-container class="md-block" flex-gt-sm>
+              <label>First name</label>
+              <input ng-model="user.firstName">
+            </md-input-container>
+          </div>
+          <md-input-container class="md-block">
+            <label>Password</label>
+            <input ng-model="user.address">
+          </md-input-container>
+          <md-input-container class="md-block">
+            <label>Biography</label>
+            <textarea ng-model="user.biography" md-maxlength="150" rows="5" md-select-on-focus></textarea>
+          </md-input-container>
+          <md-button ng-click="login()" class="md-icon-button" aria-label="Add">
+            <md-icon class="material-icons">add</md-icon>
+          </md-button>
+        </form>
+      </div>
+    </md-content>
